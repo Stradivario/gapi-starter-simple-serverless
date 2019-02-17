@@ -1,6 +1,16 @@
-import { GraphQLScalarType, GapiObjectType, GraphQLInt} from "@gapi/core";
+import { GraphQLInt, GraphQLObjectType} from "@gapi/core";
 
-@GapiObjectType()
-export class AppType {
-    readonly id: number | GraphQLScalarType = GraphQLInt;
-}
+export const AppType = new GraphQLObjectType({
+    name: 'AppType',
+    fields: () => ({
+        id: {
+            type: GraphQLInt
+        }
+    })
+});
+
+// Experimental decorator making strong typing more fun (not for production in that moment)
+// @GapiObjectType()
+// export class AppType {
+//     readonly id: number | GraphQLScalarType = GraphQLInt;
+// }

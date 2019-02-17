@@ -62,7 +62,7 @@ gapi build && serverless deploy --stage prod
 
 To check current application inside of working lambda 
 
-### Staging [Click here](https://cbjrjdznf2.execute-api.us-east-2.amazonaws.com/staging/graphql?query=query%20%7B%0A%20%20findApp(id%3A%201)%20%7B%0A%20%20%20%20id%0A%20%20%7D%0A%7D&fbclid=IwAR2I6VDE2xqoe-AfonW55UbfpW19XCwVTWjsdYcCVXogXfzN94W4LfSNB6g)
+#### Staging [Click here](https://cbjrjdznf2.execute-api.us-east-2.amazonaws.com/staging/graphql?query=query%20%7B%0A%20%20findApp(id%3A%201)%20%7B%0A%20%20%20%20id%0A%20%20%7D%0A%7D&fbclid=IwAR2I6VDE2xqoe-AfonW55UbfpW19XCwVTWjsdYcCVXogXfzN94W4LfSNB6g)
 
-### Prod [Click here](https://luhf6hv7og.execute-api.us-east-2.amazonaws.com/prod/graphql?query=query%20%7B%0A%20%20findApp(id%3A%201)%20%7B%0A%20%20%20%20id%0A%20%20%7D%0A%7D&fbclid=IwAR2I6VDE2xqoe-AfonW55UbfpW19XCwVTWjsdYcCVXogXfzN94W4LfSNB6g)
+#### Prod [Click here](https://luhf6hv7og.execute-api.us-east-2.amazonaws.com/prod/graphql?query=query%20%7B%0A%20%20findApp(id%3A%201)%20%7B%0A%20%20%20%20id%0A%20%20%7D%0A%7D&fbclid=IwAR2I6VDE2xqoe-AfonW55UbfpW19XCwVTWjsdYcCVXogXfzN94W4LfSNB6g)
 
