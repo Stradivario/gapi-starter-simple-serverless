@@ -13,7 +13,7 @@ to check advanced example project go to [advanced-example](https://github.com/St
 git clone https://github.com/Stradivario/gapi-starter-serverless
 ```
 
-#### Install @gapi/cli utility globally
+#### Install @gapi/cli utility and serverless globally
 
 
 ```bash
