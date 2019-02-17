@@ -1,5 +1,5 @@
 # @Gapi Starter Serverless simple
-##### @Nginx, @Rabbitmq, @Postgres, @Docker, @Graphql
+##### @Graphql
 
 
 This is basic example serverless project related with [GAPI](https://github.com/Stradivario/gapi)
