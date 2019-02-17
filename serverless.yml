@@ -1,0 +1,19 @@
+service: gapi-simple-lambda
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: staging
+  profile: default
+  region: us-east-2
+
+functions:
+  auth:
+    handler: dist/main.handler
+    events:
+      - http:
+          path: "/{proxy+}"
+          method: any
+          cors: true
+          integration: lambda-proxy
+    memorySize: 128
+    timeout: 10

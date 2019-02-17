@@ -1,13 +1,14 @@
 {
-  "name": "@gapi/starter-simple",
+  "name": "@gapi/starter-simple-serverless",
   "version": "1.4.30",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run install-ipfs-packages",
-    "install-ipfs-packages": "node ./node_modules/@rxdi/core/bin/root.js install",
-    "start": "./node_modules/.bin/gapi start --local",
-    "test": "./node_modules/.bin/gapi test --local",
+    "start": "gapi start --local",
+    "test": "gapi test --local",
+    "build": "gapi build",
+    "deploy": "gapi build && serverless deploy",
+    "deploy-prod": "gapi build && serverless deploy --stage prod",
     "lint": "echo"
   },
   "author": "Kristiyan Tachev (Stradivario)",
@@ -15,14 +16,6 @@
   "dependencies": {
     "@gapi/core": "^1.4.29"
   },
-  "ipfs": [
-    {
-      "provider": "https://ipfs.io/ipfs/",
-      "dependencies": [
-        "QmWtJLqyokMZE37DgncpY5HhFvtFQieBzMPDQ318aJeTw6"
-      ]
-    }
-  ],
   "nodemonConfig": {
     "ignore": [
       "./src/**/*.spec.ts"
@@ -38,7 +31,7 @@
     "ext": "ts"
   },
   "devDependencies": {
-    "typescript": "^3.0.1",
-    "@gapi/cli": "^1.4.29"
+    "@types/hapi": "^18.0.1",
+    "typescript": "^3.0.1"
   }
 }
