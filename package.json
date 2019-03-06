@@ -14,7 +14,7 @@
   "author": "Kristiyan Tachev (Stradivario)",
   "license": "MIT",
   "dependencies": {
-    "@gapi/core": "^1.4.71"
+    "@gapi/core": "^1.4.73"
   },
   "nodemonConfig": {
     "ignore": [
